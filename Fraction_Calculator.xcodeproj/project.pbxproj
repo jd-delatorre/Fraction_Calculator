@@ -21,6 +21,8 @@
 		784BCDF3189FF3AF00FDD6B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784BCDD5189FF3AD00FDD6B2 /* UIKit.framework */; };
 		784BCDFB189FF3AF00FDD6B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 784BCDF9189FF3AF00FDD6B2 /* InfoPlist.strings */; };
 		784BCDFD189FF3AF00FDD6B2 /* Fraction_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 784BCDFC189FF3AF00FDD6B2 /* Fraction_CalculatorTests.m */; };
+		784BCE08189FF7CA00FDD6B2 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 784BCE07189FF7CA00FDD6B2 /* Calculator.m */; };
+		784BCE0B18A0008E00FDD6B2 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 784BCE0A18A0008E00FDD6B2 /* Fraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		784BCDF8189FF3AF00FDD6B2 /* Fraction_CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Fraction_CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		784BCDFA189FF3AF00FDD6B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		784BCDFC189FF3AF00FDD6B2 /* Fraction_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fraction_CalculatorTests.m; sourceTree = "<group>"; };
+		784BCE06189FF7CA00FDD6B2 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		784BCE07189FF7CA00FDD6B2 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		784BCE0918A0008E00FDD6B2 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		784BCE0A18A0008E00FDD6B2 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,10 @@
 				784BCDE7189FF3AE00FDD6B2 /* ViewController.m */,
 				784BCDE9189FF3AE00FDD6B2 /* Images.xcassets */,
 				784BCDD8189FF3AD00FDD6B2 /* Supporting Files */,
+				784BCE06189FF7CA00FDD6B2 /* Calculator.h */,
+				784BCE07189FF7CA00FDD6B2 /* Calculator.m */,
+				784BCE0918A0008E00FDD6B2 /* Fraction.h */,
+				784BCE0A18A0008E00FDD6B2 /* Fraction.m */,
 			);
 			path = Fraction_Calculator;
 			sourceTree = "<group>";
@@ -199,6 +209,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "John De La Torre";
 				TargetAttributes = {
+					784BCDCD189FF3AD00FDD6B2 = {
+						DevelopmentTeam = DGYR2AB499;
+					};
 					784BCDEE189FF3AF00FDD6B2 = {
 						TestTargetID = 784BCDCD189FF3AD00FDD6B2;
 					};
@@ -250,8 +263,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				784BCDE8189FF3AE00FDD6B2 /* ViewController.m in Sources */,
+				784BCE08189FF7CA00FDD6B2 /* Calculator.m in Sources */,
 				784BCDE2189FF3AE00FDD6B2 /* AppDelegate.m in Sources */,
 				784BCDDE189FF3AE00FDD6B2 /* main.m in Sources */,
+				784BCE0B18A0008E00FDD6B2 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +393,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fraction_Calculator/Fraction_Calculator-Prefix.pch";
 				INFOPLIST_FILE = "Fraction_Calculator/Fraction_Calculator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fraction_Calculator/Fraction_Calculator-Prefix.pch";
 				INFOPLIST_FILE = "Fraction_Calculator/Fraction_Calculator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
